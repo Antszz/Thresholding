@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b6c686eb-8f49-4db9-9a96-84b60802be55</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Thresholding.py</StartupFile>
+    <StartupFile>Thresholding_campo.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,9 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Thresholding.py" />
+    <Compile Include="Thresholding_campo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Thresholding_celulas.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CelulasRatones1.png" />
+    <Content Include="CelulasRatones2.png" />
+    <Content Include="Coseschas_trigo.png" />
     <Content Include="lena.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
